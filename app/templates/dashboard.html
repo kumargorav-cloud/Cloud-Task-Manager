@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+
+        <h2>Your Tasks</h2>
+
+        <input id="task_title" placeholder="New Task">
+        <button onclick="createTask()">Add Task</button>
+
+        <ul id="task_list"></ul>
+
+        <button class="logout-btn" onclick="logout()">Logout</button>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
